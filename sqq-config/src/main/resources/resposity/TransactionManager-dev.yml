@@ -1,0 +1,60 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: sqq
+    password: sqq.-=5671
+    url: jdbc:mysql://120.25.243.0:53251/tx-manager?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+
+  redis:
+    host: 120.25.243.0
+    port: 36791
+    password: sqq.-=5671
+
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+    use-generated-keys: true
+
+
+# TxManager Host Ip
+tx-lcn:
+  manager:
+    host: 127.0.0.1
+    # TxClient连接请求端口
+    port: 8070
+    # 心跳检测时间(ms)
+    heart-time: 15000
+    # 分布式事务执行总时间
+    dtx-time: 30000
+    #参数延迟删除时间单位ms
+    netty:
+      attr-delay-time: 10000
+    concurrent-level: 128
+  # 开启日志
+  logger:
+    enabled: true
+logging:
+  level:
+    com:
+      codingapi: debug
+
+
+# redis
+
+
+
+
+#spring:
+#  zipkin:
+#    rabbitmq:
+#      queue: zipkin
+#  sleuth:
+#    sampler:
+#      percentage: 0.2
+
+
+

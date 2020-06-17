@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="sqq-activity" />
+        <module name="sqq-activity-common" />
+        <module name="sqq-common" />
+        <module name="sqq-config" />
+        <module name="sqq-eureka" />
+        <module name="sqq-feign" />
+        <module name="sqq-gateway" />
+        <module name="sqq-generator" />
+        <module name="sqq-order" />
+        <module name="sqq-swagger" />
+        <module name="sqq-tx-manager" />
+        <module name="sqq-user" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="sqq-activity" target="1.8" />
+      <module name="sqq-activity-common" target="1.8" />
+      <module name="sqq-common" target="1.8" />
+      <module name="sqq-config" target="1.8" />
+      <module name="sqq-eureka" target="1.8" />
+      <module name="sqq-feign" target="1.8" />
+      <module name="sqq-gateway" target="1.8" />
+      <module name="sqq-generator" target="1.8" />
+      <module name="sqq-order" target="1.8" />
+      <module name="sqq-shop" target="1.8" />
+      <module name="sqq-spring-cloud" target="1.8" />
+      <module name="sqq-swagger" target="1.8" />
+      <module name="sqq-tx-manager" target="1.8" />
+      <module name="sqq-user" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sqq-activity" options="-parameters" />
+      <module name="sqq-activity-common" options="-parameters" />
+      <module name="sqq-common" options="-parameters" />
+      <module name="sqq-config" options="-parameters" />
+      <module name="sqq-eureka" options="-parameters" />
+      <module name="sqq-feign" options="-parameters" />
+      <module name="sqq-gateway" options="-parameters" />
+      <module name="sqq-generator" options="-parameters" />
+      <module name="sqq-order" options="-parameters" />
+      <module name="sqq-swagger" options="-parameters" />
+      <module name="sqq-tx-manager" options="-parameters" />
+      <module name="sqq-user" options="-parameters" />
+    </option>
+  </component>
+</project>

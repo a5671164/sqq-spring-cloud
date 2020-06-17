@@ -1,0 +1,20 @@
+2020-06-02 02:57:34,329 [main] INFO  [o.s.c.a.AnnotationConfigApplicationContext] AbstractApplicationContext.java:588 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@57cf54e1: startup date [Tue Jun 02 02:57:34 CST 2020]; root of context hierarchy
+2020-06-02 02:57:34,508 [main] INFO  [o.s.b.f.a.AutowiredAnnotationBeanPostProcessor] AutowiredAnnotationBeanPostProcessor.java:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-06-02 02:57:34,539 [main] INFO  [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker] PostProcessorRegistrationDelegate.java:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$bbdac48d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-06-02 02:57:34,795 [main] INFO  [o.s.cloud.netflix.eureka.InstanceInfoFactory] InstanceInfoFactory.java:71 - Setting initial instance status as: STARTING
+2020-06-02 02:57:34,836 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:349 - Initializing Eureka in region us-east-1
+2020-06-02 02:57:35,112 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:70 - Using JSON encoding codec LegacyJacksonJson
+2020-06-02 02:57:35,112 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:71 - Using JSON decoding codec LegacyJacksonJson
+2020-06-02 02:57:35,185 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:80 - Using XML encoding codec XStreamXml
+2020-06-02 02:57:35,186 [main] INFO  [c.n.discovery.provider.DiscoveryJerseyProvider] DiscoveryJerseyProvider.java:81 - Using XML decoding codec XStreamXml
+2020-06-02 02:57:35,367 [main] INFO  [c.n.d.shared.resolver.aws.ConfigClusterResolver] ConfigClusterResolver.java:43 - Resolving eureka endpoints via configuration
+2020-06-02 02:57:35,492 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:958 - Disable delta property : false
+2020-06-02 02:57:35,493 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:959 - Single vip registry refresh property : null
+2020-06-02 02:57:35,493 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:960 - Force full registry fetch : false
+2020-06-02 02:57:35,493 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:961 - Application is null : false
+2020-06-02 02:57:35,493 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:962 - Registered Applications size is zero : true
+2020-06-02 02:57:35,493 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:964 - Application version is -1: true
+2020-06-02 02:57:35,494 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1047 - Getting all instance registry info from the eureka server
+2020-06-02 02:57:35,608 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1056 - The response status is 200
+2020-06-02 02:57:35,611 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:1311 - Not registering with Eureka server per configuration
+2020-06-02 02:57:35,614 [main] INFO  [com.netflix.discovery.DiscoveryClient] DiscoveryClient.java:449 - Discovery Client initialized at timestamp 1591037855613 with initial instances count: 2

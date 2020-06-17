@@ -1,0 +1,64 @@
+server:
+  port: 9999
+
+lb:
+  service:
+    activity:
+      uri: lb://sqq-activity
+    user:
+      uri: lb://sqq-user
+    order:
+      uri: lb://sqq-order
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: sqq-activity-gateway
+          # uri以lb://开头（lb代表从注册中心获取服务），后面接的就是你需要转发到的服务名称
+          uri: ${lb.service.activity.uri}
+          predicates:
+            - Path=/activity/**
+      #    filters:
+    #        - SwaggerHeaderFilter
+     #       - StripPrefix=1
+        - id: sqq-user-gateway
+          # uri以lb://开头（lb代表从注册中心获取服务），后面接的就是你需要转发到的服务名称
+          uri: ${lb.service.user.uri}
+          predicates:
+            - Path=/user/**
+          filters:
+            # 断路器
+            - name: Hystrix
+              args:
+                name: fallbackcmd
+                fallbackUri: forward:/defaultFallback
+
+            # redis做限流
+            - name: RequestRateLimiter
+              args:
+                # 用于限流的键的解析器的 Bean 对象的名字
+                key-resolver: '#{@uriKeyResolver}'
+                # 令牌桶每秒填充平均速率
+                redis-rate-limiter.replenishRate: 10
+                # 令牌桶总容量
+                redis-rate-limiter.burstCapacity: 100
+        - id: sqq-order-gateway
+          # uri以lb://开头（lb代表从注册中心获取服务），后面接的就是你需要转发到的服务名称
+          uri: ${lb.service.order.uri}
+          predicates:
+            - Path=/order/**
+     #     filters:
+    #        - SwaggerHeaderFilter
+    #        - StripPrefix=1
+
+  redis:
+    host: 120.25.243.0
+    port: 36791
+    password: sqq.-=5671
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 3000  #默认只有2秒
