@@ -4,9 +4,9 @@ server:
 spring:
   datasource:
       driver-class-name: com.mysql.jdbc.Driver
-      username: sqq
-      password: sqq.-=5671
-      url: jdbc:mysql://120.25.243.0:53251/spring_cloud_db?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+      username: root
+      password: 123456
+      url: jdbc:mysql://127.0.0.1:3306/spring_cloud_db?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
 
 #spring:
 #  zipkin:
