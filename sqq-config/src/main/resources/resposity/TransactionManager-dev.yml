@@ -4,12 +4,12 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    username: sqq
-    password: sqq.-=5671
-    url: jdbc:mysql://120.25.243.0:53251/tx-manager?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
+    username: root
+    password: 123456
+    url: jdbc:mysql://127.0.0.1:3306/tx-manager?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&allowPublicKeyRetrieval=true
 
   redis:
-    host: 120.25.243.0
+    host: 127.0.0.1
     port: 36791
     password: sqq.-=5671
 
